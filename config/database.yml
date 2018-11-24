@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql #updated
   database: rails_copy_production
   username: rails_copy
   password: <%= ENV['RAILS_COPY_DATABASE_PASSWORD'] %>
